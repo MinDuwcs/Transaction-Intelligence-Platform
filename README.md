@@ -36,6 +36,7 @@ Xây dựng một hệ thống có khả năng:
   - CI/CD bằng GitHub Actions.
 
 ## Thiết Kế Kiến Trúc Hệ Thống
+````
 Data Sources
     |
     v
@@ -55,7 +56,7 @@ Backend API
     |
     v
 Frontend Dashboard
-
+````
 ## Nguồn Dữ Liệu Được Sử Dụng
 | Loại Dữ Liệu | Mô Tả | Link |
 | :--- | :--- | :--- |
