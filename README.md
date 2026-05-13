@@ -59,11 +59,11 @@ Frontend Dashboard
 ## Nguồn Dữ Liệu Được Sử Dụng
 | Loại Dữ Liệu | Mô Tả | Link |
 | :--- | :--- | :--- |
-| Transaction records | Giao dịch người dùng | Nội dung C |
-| Account profiles | Thông tin tài khoản giả lập | Nội dung F |
-| Merchant info | Thông tin shop/merchant | Nội dung C |
-| Support tickets | Khiếu nại, refund, dispute | Nội dung F |
-| PDF/CSV statement | Sao kê hoặc hóa đơn mẫu | Nội dung C |
+| Transaction records | Giao dịch người dùng | Link |
+| Account profiles | Thông tin tài khoản giả lập | Link |
+| Merchant info | Thông tin shop/merchant | Link |
+| Support tickets | Khiếu nại, refund, dispute | Link |
+| PDF/CSV statement | Sao kê hoặc hóa đơn mẫu | Link |
 
 ## Công Nghệ Sử Dụng
 | Layer           | Công nghệ                        | Vai trò                        |
@@ -78,10 +78,79 @@ Frontend Dashboard
 | Notebook        | Jupyter/Colab                    | Experiment ban đầu             |
 | Version Control | Git, GitHub                      | Portfolio repo                 |
 
+## Hướng Dẫn Cài Đặt
 
+## Ví Dụ Sử Dụng
 
+## Cấu Trúc Thư Mục Dự Kiến
+.
+├── backend/
+│   ├── app/
+│   │   ├── api/
+│   │   ├── core/
+│   │   ├── models/
+│   │   ├── services/
+│   │   └── main.py
+│   ├── tests/
+│   └── requirements.txt
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── external/
+│
+├── notebooks/
+│
+├── scripts/
+│   ├── run_pipeline.py
+│   └── train_model.py
+│
+├── models/
+│
+├── docs/
+│
+├── docker/
+│
+├── .env.example
+├── .gitignore
+├── docker-compose.yml
+├── README.md
+└── LICENSE
 
-
+## Phụ Thuộc
+**Backed:**
+  - fastapi
+  - uvicorn
+  - pandas
+  - numpy
+  - scikit-learn
+  - sqlalchemy
+  - psycopg2-binary
+  - pydantic
+  - python-dotenv
+**Machine Learning / AI:**
+  - Pytorch
+  - scikit-learn
+  - langchain
+  - langgraph
+  - sentence-transformers
+  - faiss-cpu
+**Frontend:**
+  - react
+  - next
+  - typescript
+  - tailwindcss
+  - axios
+  - recharts
+**Database / Infrastructure:**
+  - postgresql
+  - docker
+  - docker-compose
 
 
 
