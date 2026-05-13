@@ -133,6 +133,7 @@ Frontend Dashboard
   - psycopg2-binary
   - pydantic
   - python-dotenv
+
 **Machine Learning / AI:**
   - Pytorch
   - scikit-learn
@@ -140,6 +141,7 @@ Frontend Dashboard
   - langgraph
   - sentence-transformers
   - faiss-cpu
+
 **Frontend:**
   - react
   - next
@@ -147,6 +149,7 @@ Frontend Dashboard
   - tailwindcss
   - axios
   - recharts
+
 **Database / Infrastructure:**
   - postgresql
   - docker
