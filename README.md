@@ -83,7 +83,7 @@ Frontend Dashboard
 ## Ví Dụ Sử Dụng
 
 ## Cấu Trúc Thư Mục Dự Kiến
-.
+```
 ├── backend/
 │   ├── app/
 │   │   ├── api/
@@ -121,7 +121,7 @@ Frontend Dashboard
 ├── docker-compose.yml
 ├── README.md
 └── LICENSE
-
+```
 ## Phụ Thuộc
 **Backed:**
   - fastapi
