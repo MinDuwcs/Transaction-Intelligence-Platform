@@ -58,13 +58,11 @@ Backend API
 Frontend Dashboard
 ````
 ## Nguồn Dữ Liệu Được Sử Dụng
-| Loại Dữ Liệu | Mô Tả | Link |
-| :--- | :--- | :--- |
-| Transaction records | Giao dịch người dùng | Link |
-| Account profiles | Thông tin tài khoản giả lập | Link |
-| Merchant info | Thông tin shop/merchant | Link |
-| Support tickets | Khiếu nại, refund, dispute | Link |
-| PDF/CSV statement | Sao kê hoặc hóa đơn mẫu | Link |
+| Bộ Dữ Liệu                           | Mô Tả                                                                           | Link                           |
+| ------------------------------------ | --------------------------------------------------------------------------------| ------------------------------ |
+| Synthetic Banking Dataset            | Bộ dữ liệu này là một mô phỏng cơ sở dữ liệu ngân hàng tổng hợp quy mô lớn      | [Source](https://www.kaggle.com/datasets/akrambelha/synthetic-banking-dataset-csv-sql-sqlite)              |
+| Credit Card Fraud Detection          | Dữ liệu này chứa các giao dịch được thực hiện bằng thẻ tín dụng đã được bảo mật | [Source](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)               |
+| SEC EDGAR Company Fundamentals (API) | Hệ thống công khai báo cáo tài chính của các công ty niêm yết tại Mỹ            | [Source]()               |
 
 ## Công Nghệ Sử Dụng
 | Layer           | Công nghệ                        | Vai trò                        |
@@ -72,7 +70,7 @@ Frontend Dashboard
 | Language        | Python                           | ETL, AI, backend               |
 | Backend         | FastAPI                          | REST API                       |
 | Database        | PostgreSQL                       | Lưu dữ liệu có cấu trúc        |
-| Frontend        | React hoặc Next.js               | Dashboard demo                 |
+| Frontend        | Streamlit (Version 1)            | Dashboard demo                 |
 | Container       | Docker, Docker Compose           | Chạy toàn bộ hệ thống          |
 | AI/ML           | scikit-learn, PyTorch tùy mức độ | Model phân tích rủi ro/anomaly |
 | LLM Workflow    | LangChain hoặc LangGraph         | Tóm tắt insight, Q&A dữ liệu   |
