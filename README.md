@@ -72,7 +72,7 @@ Frontend Dashboard
 | Database        | PostgreSQL                       | Lưu dữ liệu có cấu trúc        |
 | Frontend        | Streamlit (Version 1)            | Dashboard demo                 |
 | Container       | Docker, Docker Compose           | Chạy toàn bộ hệ thống          |
-| AI/ML           | scikit-learn, PyTorch tùy mức độ | Model phân tích rủi ro/anomaly |
+| AI/ML           | scikit-learn (Version 1          | Model phân tích rủi ro/anomaly |
 | LLM Workflow    | LangChain hoặc LangGraph         | Tóm tắt insight, Q&A dữ liệu   |
 | Notebook        | Jupyter/Colab                    | Experiment ban đầu             |
 | Version Control | Git, GitHub                      | Portfolio repo                 |
