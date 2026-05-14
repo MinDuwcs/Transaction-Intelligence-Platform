@@ -1,9 +1,6 @@
 # AI Financial Intelligence Risk Analytics Platform
 Nền tảng sử dụng Data Pipeline + AI xử lý dữ liệu tài chính bán thực tế: giao dịch, hóa đơn, sao kê, ticket hỗ trợ khách hàng. Hệ thống sẽ ingest dữ liệu, làm sạch, lưu vào database, chạy phân tích rủi ro, dùng AI để truy vấn, giải thích bất thường, và hiển thị dashboard.
 
-## Mô tả
-Xây dựng hệ thống phân tích giao dịch tài chính để phát hiện các giao dịch có rủi ro cao hoặc bất thường, sau đó hiển thị kết quả lên dashboard và cung cấp giải thích bằng AI.
-
 ## Mục Tiêu Dự Án
 Xây dựng một hệ thống có khả năng:
   - Thu thập dữ liệu tài chính, tin tức hoặc dữ liệu giao dịch mẫu.
