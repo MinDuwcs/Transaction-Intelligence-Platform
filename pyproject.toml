@@ -1,0 +1,108 @@
+# ==============================================================================
+# Cấu hình dự án aifirap
+# ==============================================================================
+
+[project]
+name = "aifirap"
+version = "0.1.0"
+description = "AI Financial Intelligence Risk Analytics Platform"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+authors = [
+    { name = "MinDuwcs" }
+]
+
+# ------------------------------------------------------------------------------
+# Runtime dependencies
+# ------------------------------------------------------------------------------
+dependencies = [
+    # --- Web framework & API server ---
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.32.0",
+    "streamlit>=1.40.0",
+
+    # --- Xử lý & phân tích dữ liệu ---
+    "pandas>=2.2.0",
+    "numpy>=2.0.0",
+    "scikit-learn>=1.5.0",
+    "scipy>=1.14.0",
+    "joblib>=1.4.0",
+
+    # --- Cơ sở dữ liệu & ORM ---
+    "sqlalchemy>=2.0.0",
+    "psycopg2-binary>=2.9.0",
+    "alembic>=1.13.0",
+
+    # --- Cấu hình & validation ---
+    "pydantic>=2.9.0",
+    "pydantic-settings>=2.5.0",
+    "python-dotenv>=1.0.0",
+
+    # --- HTTP client ---
+    "requests>=2.32.0",
+    "httpx>=0.27.0",
+
+    # --- Trực quan hóa dữ liệu ---
+    "matplotlib>=3.9.0",
+    "plotly>=5.24.0",
+
+    # --- Môi trường phân tích & notebook ---
+    "jupyter>=1.1.0",
+    "ipykernel>=6.29.0",
+
+    # --- Điều phối luồng công việc ---
+    "prefect>=3.0.0",
+
+    # --- AI / LLM & vector search ---
+    "langchain>=0.3.0",
+    "langchain-community>=0.3.0",
+    "chromadb>=0.5.0",
+    "sentence-transformers>=3.0.0",
+
+    # --- Giải thích mô hình AI ---
+    "shap>=0.46.0",
+]
+
+# ------------------------------------------------------------------------------
+# Dev dependencies
+# Cài đặt: uv pip install -e ".[dev]"
+# ------------------------------------------------------------------------------
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.0",
+    "pytest-cov>=5.0.0",
+    "ruff>=0.7.0",
+    "mypy>=1.11.0",
+    "pre-commit>=4.0.0",
+]
+
+# ------------------------------------------------------------------------------
+# Build config
+# ------------------------------------------------------------------------------
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# ------------------------------------------------------------------------------
+# Ruff config
+# ------------------------------------------------------------------------------
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+# ------------------------------------------------------------------------------
+# pytest config
+# ------------------------------------------------------------------------------
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+# ------------------------------------------------------------------------------
+# mypy config
+# ------------------------------------------------------------------------------
+[tool.mypy]
+python_version = "3.12"
+strict = false
+ignore_missing_imports = true
